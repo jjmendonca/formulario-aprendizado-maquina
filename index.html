@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de vítima em acidente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Previsão de vítima em acidente</h1>
+    
+    <div class="container">
+        
+
+        <form id="previsaoForm">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" list="enderecos" required>
+
+            <datalist id="enderecos">
+                <option value="AV SUL">
+                <option value="RUA BARROS BARRETO">
+                <option value="AV PIRACICABA">
+                <option value="RUA NETO CAMPELO">
+                <option value="RUA SUBIDA DO PLATO">
+                <option value="RUA JOAO CARNEIRO DA CUNHA">
+            </datalist>
+
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" list="bairros" required>
+                    
+            <datalist id="bairros">
+                <option value="CABANGA">
+                <option value="SANTO AMARO">
+                <option value="JARDIM SÃO PAULO">
+                <option value="CAXANGÁ">
+                <option value="BOMBA DO HEMETÉRIO">
+                <option value="PINA">
+                <option value="ÁGUA FRIA">
+                <option value="AFOGADOS">
+                <option value="CAMPO GRANDE">
+                <option value="PARNAMIRIM">
+                <option value="SANCHO">
+                <option value="IMBIRIBEIRA">
+                <option value="VASCO DA GAMA">
+                <option value="TORRE">
+                <option value="BOA VIAGEM">
+                <option value="TAMARINEIRA">
+                <option value="CASA AMARELA">
+                <option value="CORDEIRO">
+                <option value="MADALENA">
+                <option value="SÃO JOSÉ">
+                <option value="BOA VISTA">
+                <option value="ESTÂNCIA">
+                <option value="GRAÇAS">
+                <option value="CASA FORTE">
+                <option value="FUNDÃO">
+                <option value="ESPINHEIRO">
+                <option value="IPSEP">
+                <option value="ROSARINHO">
+                <option value="PAISSANDU">
+                <option value="BAIRRO DO RECIFE">
+                <option value="SANTANA">
+                <option value="AFLITOS">
+                <option value="DERBY">
+                <option value="ILHA DO RETIRO">
+                <option value="ARRUDA">
+                <option value="SAN MARTIN">
+                <option value="IBURA">
+                <option value="ALTO DO MANDU">
+                <option value="ILHA DO LEITE">
+                <option value="AREIAS">
+                <option value="IPUTINGA">
+                <option value="SOLEDADE">
+                <option value="VÁRZEA">
+                <option value="COELHOS">
+                <option value="TORRÕES">
+                <option value="BONGI">
+                <option value="ALTO JOSÉ BONIFÁCIO">
+                <option value="BEBERIBE">
+                <option value="CAÇOTE">
+                <option value="BARRO">
+                <option value="PRADO">
+                <option value="MACAXEIRA">
+                <option value="MUSTARDINHA">
+                <option value="COQUEIRAL">
+                <option value="ALTO SANTA TERESINHA">
+                <option value="JAQUEIRA">
+                <option value="DOIS IRMÃOS">
+                <option value="TEJIPIÓ">
+                <option value="DOIS UNIDOS">
+                <option value="BREJO DA GUABIRABA">
+                <option value="ENCRUZILHADA">
+                <option value="CURADO">
+                <option value="SANTO ANTÔNIO">
+                <option value="BRASÍLIA TEIMOSA">
+                <option value="JOANA BEZERRA">
+                <option value="NOVA DESCOBERTA">
+                <option value="ZUMBI">
+                <option value="CAJUEIRO">
+                <option value="JORDÃO">
+                <option value="CIDADE UNIVERSITÁRIA">
+                <option value="ALTO JOSÉ DO PINHO">
+                <option value="GUABIRABA">
+                <option value="APIPUCOS">
+                <option value="Desconhecido">
+                <option value="LINHA DO TIRO">
+                <option value="MANGUEIRA">
+                <option value="ILHA JOANA BEZERRA">
+                <option value="SÍTIO DOS PINTOS">
+                <option value="CÓRREGO DO JENIPAPO">
+                <option value="FABIO">
+                <option value="MANGABEIRA">
+                <option value="TORREÃO">
+                <option value="ENGENHO DO MEIO">
+                <option value="PORTO DA MADEIRA">
+                <option value="HIPÓDROMO">
+                <option value="TOTÓ">
+                <option value="PONTO DE PARADA">
+                <option value="MORRO DA CONCEIÇÃO">
+                <option value="JIQUIÁ">
+                <option value="POÇO DA PANELA">
+                <option value="COHAB">
+                <option value="PASSARINHO">
+                <option value="CAMPINA DO BARRETO">
+                <option value="MONTEIRO">
+                <option value="IPESEP">
+                <option value="BREJO DE BEBERIBE">
+                <option value="BOMBA DO HEMETERIO">
+                <option value="JORDAO">
+                <option value="TOTO">
+                <option value="AGUA FRIA">
+                <option value="CAXANGA">
+                <option value="JARDIM SAO PAULO">
+                <option value="SAO JOSE">
+                <option value="TORROES">
+                <option value="ALTO JOSE DO PINHO">
+                <option value="TORREAO">
+                <option value="VARZEA">
+                <option value="CORREGO DO JENIPAPO">
+                <option value="SANTO ANTONIO">
+                <option value="ESTANCIA">
+                <option value="CIDADE UNIVERSITARIA">
+                <option value="TEJIPIO">
+                <option value="DOIS IRMAOS">
+                <option value="GRACAS">
+                <option value="BRASILIA TEIMOSA">
+                <option value="MORRO DA CONCEICAO">
+                <option value="SITIO DOS PINTOS">
+                <option value="POCO DA PANELA">
+                <option value="CACOTE">
+                <option value="ALTO JOSE BONIFACIO">
+                <option value="0">
+                <option value="JIQUIA">
+            </datalist>
+
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" list="tipos" required>
+
+            <datalist id="tipos">
+                <option value="COLISÃO">
+                <option value="CAPOTAMENTO">
+                <option value="CHOQUE">
+                <option value="ENGAVETAMENTO">
+                <option value="TOMBAMENTO">
+                <option value="ATROPELAMENTO">
+                <option value="COLISÃO COM CICLISTA">
+                <option value="ACID. DE PERCURSO">
+                <option value="NATUREZA">
+                <option value="COLISAO">
+                <option value="ATROPELAMENTO ANIMAL">
+                <option value="0">
+                <option value="ABALROAMENTO TRANSVERSAL">
+                <option value="COLISÃO TRASEIRA">
+                <option value="ABALROAMENTO LONGITUDINAL">
+                <option value="CHOQUE VEÍCULO PARADO">
+                <option value="COLISÃO FRONTAL">
+                <option value="CHOQUE OBJETO FIXO">
+                <option value="COLISÃO LATERAL">
+                <option value="COLISÃO TRANSVERSAL">
+                <option value="QUEDA">
+                <option value="ATROPELAMENTO DE PESSOA">
+                <option value="Não informado">
+                <option value="MONITORAMENTO">
+                <option value="SEMÁFORO">
+                <option value="ATROPELAMENTO DE ANIMAL">
+                <option value="OUTROS APOIOS">
+                <option value="APOIO EMLURB">
+                <option value="FISCALIZAÇÃO">
+                <option value="RENDIÇÃO">
+                <option value="OUTROS">
+                <option value="APOIO CELPE">
+            </datalist>
+
+
+            <label for="localCometimento">Local cometimento:</label>
+            <input type="text" id="localCometimento" name="localCometimento" list="locaisCometimento" required>
+
+            <datalist id="locaisCometimento">
+                <option value="Desconhecido">
+                <option value="AV. ENG. ABDIAS DE CARVALHO, SEMAFORO 328.">
+                <option value="AV. GOV. AGAMENON MAGALHAES, SEMAFORO 173.">
+                <option value="RUA DO JARDIM, AO LADO AO N. 22">
+                <option value="RUA JOAQUIM NABUCO, APOS AO SEMAFORO N. 174 SENTIDO SUBURBIO">
+                <option value="AVENIDA SUL, SOB AO SEMAFORO N. 260">
+            </datalist>
+
+
+            <div id="data">
+
+                <div>
+                    <label for="dia">Dia:</label>
+                    <input type="number" id="dia" name="dia" min="1" max="31" required>
+                </div>
+
+                <div>
+                    <label for="mes">Mês:</label>
+                    <input type="number" id="mes" name="mes" min="1" max="12" required>
+                </div>
+                <div>
+                    <label for="ano">Ano:</label>
+                    <input type="number" id="ano" name="ano" min="2000" max="9999" required>
+                </div>
+            </div>
+            <button type="submit">Executar previsão</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
